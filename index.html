@@ -7,7 +7,7 @@
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="multitap.github.io"/>
+  <meta property="og:url" content="https://multitap.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MULTI-TAP: MULTI-OBJECTIVE TASK-AWARE PREDICTOR FOR IMAGE-TEXT ALIGNMENT BENCHMARK</h1>
+            <h1 class="title is-1 publication-title">MULTI-TAP: MULTI-OBJECTIVE TASK-AWARE PREDICTOR FOR IMAGE-TEXT ALIGNMENT</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -60,7 +60,7 @@
                 <span class="author-block">
                   <a href="https://namin-an.github.io/" target="_blank">Na Min An</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://jamesthorne.com/" target="_blank">James Thorne</a>
+                    <a href="https://jamesthorne.com/" target="_blank">James Thorne</a>,
                   </span>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=KB5XZGIAAAAJ&hl=en&oi=ao" target="_blank">Hyunjung Shim</a>
@@ -134,7 +134,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Efficiently evaluating image-text alignment$-$especially for long and complex text inputs$-$while reflecting human preferences across multiple aspects is a significant issue for developing reliable vision-language applications. It is especially crucial in real-world scenarios where multiple valid descriptions exist depending on contexts or user needs. However, the research progress is hindered by the lack of comprehensive benchmarks and existing evaluation predictors lacking one or more key properties: (1) $\textit{Alignment with humans}$, (2) $\textit{Inference efficiency}$, (3) $\textit{Long-text understanding}$, and (4) $\textit{Applicability to multi-objective scoring}$. To address these challenges, we propose $\texttt{MULTI-TAP}$ ($\textbf{Multi}$-Objective $\textbf{T}$ask-$\textbf{A}$ware $\textbf{P}$redictor), a reward model capable of both multi-objective and single-objective scoring. $\texttt{MULTI-TAP}$ uses the last hidden states from large vision language models (LVLMs) to produce a single overall score. In the following stage, the frozen hidden states are combined with a lightweight, task-aware ridge regression layer, producing fine-grained scores across multiple human-interpretable objectives. Our framework shows strong performances across different LVLM architectures and various tasks, achieving superior alignment with human judgments than existing metrics ($\textit{e.g.}$, +8.1 Kendall's $\tau_{c}$ compared to CLIP-Score in FlickrExp) and on par with the GPT-4o-based predictor, G-VEval. To validate our method in practical settings, we release $\texttt{EYE4ALL}$, a 1k text-image-to-text dataset evaluated by 25 humans. Each sample includes a text request, image, and text response, assessed with multi-objective scores based on the response quality and alignment to the request/image. $\texttt{EYE4ALL}$ is applicable for two benchmarking purposes: (1) $\texttt{EYE4ALLMulti}$, seven-dimensional human rating alignment, and (2) $\texttt{EYE4ALLPref}$, pairwise preference alignment (chosen or rejected). Our contributions can guide future research for developing human-aligned predictors.
+            Efficiently evaluating image-text alignment—especially for long and complex text inputs—while reflecting human preferences across multiple aspects is a significant challenge for developing reliable vision-language applications. It is especially crucial in real-world scenarios where multiple valid descriptions exist depending on contexts or user needs. However, the research progress is hindered by the lack of comprehensive benchmarks and existing evaluation predictors lacking one or more key properties: (1) <em>Alignment with humans</em>, (2) <em>Inference efficiency</em>, (3) <em>Long-text understanding</em>, and (4) <em>Applicability to multi-objective scoring</em>. To address these challenges, we propose MULTI-TAP <strong>Multi</strong>-Objective <strong>T</strong>ask-<strong>A</strong>ware <strong>P</strong>redictor), a reward model capable of both multi-objective and single-objective scoring. MULTI-TAP uses the last hidden states from large vision language models (LVLMs) to produce a single overall score. In the following stage, the frozen hidden states are combined with a lightweight, task-aware ridge regression layer, producing fine-grained scores across multiple human-interpretable objectives. Our framework shows strong performances across different LVLM architectures and various tasks, achieving superior alignment with human judgments than existing metrics (<em>e.g.</em>, +8.1 Kendall's &tau;<sub>c</sub> compared to CLIP-Score in FlickrExp) and on par with the GPT-4o-based predictor, G-VEval. To validate our method in practical settings, we release EYE4ALL, a 1k text-image-to-text dataset evaluated by 25 humans. Each sample includes a text request, image, and text response, assessed with multi-objective scores based on the response quality and alignment to the request/image. EYE4ALL is applicable for two benchmarking purposes: (1) EYE4ALLMulti, seven-dimensional human rating alignment, and (2) EYE4ALLPref, pairwise preference alignment (chosen or rejected). Our contributions can guide future research for developing human-aligned predictors.
           </p>
         </div>
       </div>
@@ -158,7 +158,6 @@
       </div>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
